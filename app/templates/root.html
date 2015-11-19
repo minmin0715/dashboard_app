@@ -1,0 +1,31 @@
+
+
+        <div class="row">
+            <nav class="navbar navbar-default navbar-fixed-top">
+              <ul id="bignav">
+                <li id="nav"><img src="../assets/images/src/app/logo.png"></li>
+                <li id="nav">&nbsp;&nbsp;&nbsp;&nbsp;<span>{{username}}</span></li>
+                <li id="nav"><span>{{CurrentDate | date:'MM/dd/yyyy'}}</span></li>
+                <li id="nav"><a href="#/login"><button class="btn btn-default" ng-click="logout()">Log Out</button></a></li>
+              </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-sx-0 col-sm-0" ng-app="">
+                <ul>
+                    <li class="glyphicon glyphicon-cloud" ng-style="myStyle" ng-click="toggle()" ng-mouseover="express()" ng-mouseout="out()" id="navbck"><a ng-style="linkStyle" id="link" href="#/root/overview">Overview</a></li>
+                    <br>
+                    <li class="glyphicon glyphicon-tags" ng-style="myStyle1" ng-click="toggle1()" ng-mouseover="express1()" ng-mouseout="out1()" id="navbck"><a ng-style="linkStyle1" id="link" href="#/root/work">Work</a></li>
+                    <br>
+                    <li class="glyphicon glyphicon-tint" ng-style="myStyle2" ng-click="toggle2()" ng-mouseover="express2()" ng-mouseout="out2()" id="navbck"><a ng-style="linkStyle2" id="link" href="#/root/producer">Producer</a></li>
+                    <br>
+                    <li class="glyphicon glyphicon-th-large" ng-style="myStyle3" ng-click="toggle3()" ng-mouseover="express3()" ng-mouseout="out3()" id="navbck"><a ng-style="linkStyle3" id="link" href="#/root/contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-10 col-sx-12 col-sm-12" ui-view>
+               
+            </div>
+        </div>
+        
+

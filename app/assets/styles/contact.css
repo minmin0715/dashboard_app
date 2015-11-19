@@ -1,0 +1,30 @@
+pre{
+	width: 100%;
+}
+.form-group{
+	width:101%;
+}
+#addit{
+	margin-left: 15px;
+}
+#confir{
+	margin-bottom: 10px;
+}
+#detail{
+	background-color: white;
+}
+#priority{
+	margin-left: 2px;
+}
+.form-horizontal{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.btn-info{
+	float: left;
+}
+
+.alert-success{
+	margin-bottom: 0px;
+}

@@ -1,0 +1,21 @@
+.pic span{
+	display: block;
+}
+.authorcolor{
+	color: green;
+}
+.shuxian{
+	border-left: 1px solid black;
+}
+.modal{
+	position: fixed;
+	top: 70px;
+	/*left: 400px;*/
+}
+.dialogtitle{
+	text-align: center;
+	margin: 0;
+}
+.dialoginput{
+	display: block;
+}

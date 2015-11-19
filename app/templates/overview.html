@@ -1,0 +1,45 @@
+<div class="container">
+    <h2 id="subview">Overview</h2>
+    <div class="jumbotron" id="overview">
+        <p id="one">{{nickname}}</p>
+        <img id="minh"  src="{{picture}}">
+
+        <br>
+        <br>
+        <p id="two">Welcome to dashboard application. This application guide will introduce you to things that you can do while staying here. All the sections mentioned below can be accessed from the navigation menu on the left side </p>
+        <div>
+            <script type="text/ng-template" id="group-template.html">
+                <div class="panel {{panelClass || 'panel-default'}}">
+                    <div class="panel-heading">
+                        <h4 class="panel-title" style="color:#fa39c3">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" accordion-transclude="heading"><span
+            ng-class="{'text-muted': isDisabled}">{{heading}}</span></a>
+        </h4>
+                    </div>
+                    <div class="panel-collapse collapse" collapse="!isOpen">
+                        <div class="panel-body" style="text-align: right" ng-transclude></div>
+                    </div>
+                </div>
+            </script>
+            <accordion>
+            <accordion close-others="oneAtATime">
+                <accordion-group heading="Work Section" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+                    This section contains the demonstration for all the final pruducts that has been produced in the market 
+                </accordion-group>
+            </accordion>
+            <accordion close-others="one1AtATime">
+                <accordion-group heading="Producer Section" is-open="status.isSecondOpen" is-disabled="status.isFirstDisabled">
+                   This section contains information about creator of all the works and how to get in touch with them
+                </accordion-group>
+            </accordion>
+            <accordion close-others="one2AtATime">
+                <accordion-group heading="Contact Section" is-open="status.isThirdOpen" is-disabled="status.isFirstDisabled">
+                    This section provides a gateway for users to voice out opinions regarding the application and any other questions or concerns that one might have
+                </accordion-group>
+            </accordion>
+        </accordion>
+            
+           
+        </div>
+    </div>
+</div>
